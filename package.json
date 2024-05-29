@@ -2,7 +2,11 @@
   "name": "@buy-micro-frontend/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start:all": "nx run-many --target=serve",
+    "start:catalog": "nx serve catalog --port=4201",
+    "start:checkout": "nx serve checkout --port=4202"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~18.0.0",
